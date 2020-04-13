@@ -1,3 +1,14 @@
+//   data 
+$(document).ready(function(){
+  $(".search").on("click", function(){
+    //create to variables that captures the id of the input for the city and state weather
+    // create another variable that will grab the id for the parent attribute 
+   var cityStateWeather = $(this).siblings(".search").val();
+   var currentWeather = $(this).parent().attr("id");
+   localStorage.setItem(cityStateWeather, currentWeather);
+  });
+  
+  
   // This is our API key
   var APIKey = "8217efea7fd75166b3974bc57cfcb77d";
 
@@ -37,3 +48,4 @@
       console.log("Humidity: " + response.main.humidity);
       console.log("Temperature (F): " + tempF);
     });
+});

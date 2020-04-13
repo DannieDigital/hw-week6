@@ -11,32 +11,23 @@ h2 {
     font-size: larger;
 }
 
-/* .jumbotron {
-    text-align: center;
-    background-color: black;
-    color: white;
-} */
-
 .header {
-  padding: 30px;
-  text-align: center;
-  background: black;
-  color: white;
-  font-size: 30px;
-}
+    padding: 30px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 30px;
+  }
 
 .weatherSearch{
     float: left;
-    background-color: whitesmoke ;
-    
-}
-
-.search {
+    background-color: whitesmoke;
     float: left;
-}
-button {
-    color: white;
-    background-color: blue;
+    width: 33%;
+    height: 200px;
+    padding: 20px;
+    margin-left: 30px;
+   border: 1px solid #eee;  
 }
 
 .currentWeather {
@@ -51,4 +42,33 @@ button {
     width: 50%;
     float: right;
 }
+
+.forecast{
+    padding: 20px;
+    padding-right: 100px;
+    margin-top: 100px;
+    width: 50%;
+    float: right;
+    position: relative;
+}
+
+.dashboard {
+    width: 100%;
+    overflow: auto;
+    clear: both;
+    color: #fff;
+    background: #394549;
+}
+
+
+.search {
+    float: left;
+}
+
+button {
+    color: white;
+    background-color: blue;
+}
+
+
 
