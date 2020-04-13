@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    color: black;
+    background-color: white;
+}
+
+h2 {
+    font-size: larger;
+}
+
+/* .jumbotron {
+    text-align: center;
+    background-color: black;
+    color: white;
+} */
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 30px;
+}
+
+.weatherSearch{
+    float: left;
+    background-color: whitesmoke ;
+    
+}
+
+.search {
+    float: left;
+}
+button {
+    color: white;
+    background-color: blue;
+}
+
+.currentWeather {
+    background-color: #fff;
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+    margin: 2%;
+    margin-top: 80px;
+    padding: 20px;
+    width: 50%;
+    float: right;
+}
+

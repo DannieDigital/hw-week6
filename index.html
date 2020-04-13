@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <!-- header for weather app -->
+    <header class="header">
+        <h1>Weather Dashboard</h1>
+    </header>
+        <main class="currentWeather">
+            <div class="city"></div>
+            <div class="tempF"></div>
+            <div class="humidity"></div>
+            <div class="temp"></div>
+            <div class="wind"></div>
+            <div class="uvIndex"></div>
+        </main>
+        <section>
+            <div class="forecast">
+            <h1>5-Day Forecast</h1>
+            <div class= "day-1"></div>
+            <div class="day-2"></div>
+            <div class="day-3"></div>
+            <div class="day-4"></div>
+            <div class="day-5"></div>
+        </div>
+
+        </section>
+            
+
+        <!-- section to search cities's weather -->
+    <aside class="weatherSearch">
+        <div class="container">
+            <h2>Search for a City:</h2>
+                <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
+                    <input type="text" placeholder="Search.." name="search2">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+     
+        <table class="table">
+                <thead>
+                    <tr>
+                    <!-- The scope attribute specifies that this is a header for a column -->
+                    <th scope="col">test</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Interstellar</td>
+                    </tr>
+                    
+                </tbody>
+                </table>
+            </div>
+            </aside>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="script.js"></script>
+</body>
+</html>
