@@ -8,6 +8,27 @@ $(document).ready(function(){
    localStorage.setItem(cityStateWeather, currentWeather);
   });
   
+//   Need catpure the city and state that the user inputs 
+  var cityState = [];
+  var queryURL = "https://api.openweathermap.org/data/2.5/weather?" + cityState +
+  "q={city name},{state}&appid=8217efea7fd75166b3974bc57cfcb77d";
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function(response) {
+    var tBody = $("tbody");
+    var tRow = $("<tr>");
+    // Methods run on jQuery selectors return the selector they we run on
+    // This is why we can create and save a reference to a td in the same statement we update its text
+    var cityTd = $("<td>").text(response.Title);
+    var stateTd = $("<td>").text(response.Year);
+    // Append the newly created table data to the table row
+    tRow.append(cityTd, stateTd);
+    // Append the table row to the table body
+    tBody.append(tRow);
+  });
+
   
   // This is our API key
   var APIKey = "8217efea7fd75166b3974bc57cfcb77d";
