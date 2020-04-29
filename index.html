@@ -21,21 +21,31 @@
         <section id="dashboard">
             <aside class="weatherSearch">
                 <div class="container">
-                    <h2>Search for a City:</h2>
-                        <form method="POST" class="search" action="/action_page.php" style="margin:auto;max-width:300px">
-                            <input type="text" placeholder="Search.." name="search2">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                      
+                    <h2>Need The Weather?</h2>
+                    <form role="form">
+                    <div class="form-group">
+                        <label for="weather-input"></label>
+                        <input type="text" id="weatherInput">
+                  
+                        <!-- This button will trigger our AJAX call -->
+                        <input id="find-weather" type="submit" value="Search">
+                    </div>
+                    </form>
+                                   
                         <table class="table">
                           <thead>
                             <tr>
                             <!-- The scope attribute specifies that this is a header for a column -->
-                              <th scope="col"></th>
+                              <th scope="col">City</th>
+                              <th scope="col">State</th>
                             </tr>
                              </thead>
                         <tbody>
                             <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             </tr>  
                         </tbody>
@@ -55,20 +65,56 @@
         
         <div class="forecast"> 
             <h1>5-Day Forecast:</h1>
-            <div class="rounded float-left"></div>
-            <div class="rounded mx-auto d-block"></div>
-            <div class="rounded mx-auto d-block"></div>
-            <div class="rounded mx-auto d-block"></div>
-            <div class="rounded float-right"></div>
+        
+            <div id="fiveDay" class="rounded mx-auto d-block">
+            <div class="city"></div>
+            <div class="tempF"></div>
+            <div class="humidity"></div>
+            <div class="temp"></div>
+            <div class="wind"></div>
+            <div class="uvIndex"></div>
+            </div>
+            <div id="fiveDayOne" class="rounded mx-auto d-block">
+            <div class="city"></div>
+            <div class="tempF"></div>
+            <div class="humidity"></div>
+            <div class="temp"></div>
+            <div class="wind"></div>
+            <div class="uvIndex"></div>
+            </div>
+            <div id="fiveDayTwo" class="rounded mx-auto d-block">
+            <div class="city"></div>
+            <div class="tempF"></div>
+            <div class="humidity"></div>
+            <div class="temp"></div>
+            <div class="wind"></div>
+            <div class="uvIndex"></div>
+            </div>
+            <div id="fiveDayThree" class="rounded mx-auto d-block">
+            <div class="city"></div>
+            <div class="tempF"></div>
+            <div class="humidity"></div>
+            <div class="temp"></div>
+            <div class="wind"></div>
+            <div class="uvIndex"></div>
+            </div>
+            <div id="fiveDayFour" class="rounded mx-auto d-block">
+                <div class="city"></div>
+            <div class="tempF"></div>
+            <div class="humidity"></div>
+            <div class="temp"></div>
+            <div class="wind"></div>
+            <div class="uvIndex"></div>
+            </div>
         </div>
+        
                
     
       
      
             
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"  type="text/javascript"></script>
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="script.js"></script>
 </body>
 </html>

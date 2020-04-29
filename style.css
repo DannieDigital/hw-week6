@@ -47,7 +47,7 @@ h2 {
     padding: 20px;
     padding-right: 100px;
     margin-top: 100px;
-    width: 50%;
+    width: 100%;
     float: right;
     position: relative;
 }
@@ -71,4 +71,72 @@ button {
 }
 
 
+#fiveDay {
+    background-color: blue;
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+    margin: 2%;
+    margin-top: 80px;
+    padding: 20px;
+    width: 20%;
+    float: right;
+    color: whitesmoke;
+}
 
+#fiveDayOne {
+    background-color: blue;
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+    margin: 2%;
+    margin-top: 80px;
+    padding: 20px;
+    width: 20%;
+    float: left;
+    color: whitesmoke;
+}
+
+#fiveDayTwo {
+    background-color: blue;
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+    margin: 2%;
+    margin-top: 80px;
+    padding: 20px;
+    width: 20%;
+    float: right;
+    color: whitesmoke;
+}
+
+#fiveDayThree {
+    background-color: blue;
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+    margin: 2%;
+    margin-top: 80px;
+    padding: 20px;
+    width: 20%;
+    float: right;
+    color: whitesmoke;
+}
+
+#fiveDayFour {
+    background-color: blue;
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+    margin: 2%;
+    margin-top: 80px;
+    padding: 20px;
+    width: 20%;
+    float: right;
+    color: whitesmoke;
+}

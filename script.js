@@ -1,72 +1,53 @@
-//   data 
-$(document).ready(function(){
-  $(".search").on("click", function(){
-    //create to variables that captures the id of the input for the city and state weather
-    // create another variable that will grab the id for the parent attribute 
-   var cityStateWeather = $(this).siblings(".search").val();
-   var currentWeather = $(this).parent().attr("id");
-   localStorage.setItem(cityStateWeather, currentWeather);
-  });
-  
-//   Need catpure the city and state that the user inputs 
-  var cityState = [];
-  var queryURL = "https://api.openweathermap.org/data/2.5/weather?" + cityState +
-  "q={city name},{state}&appid=8217efea7fd75166b3974bc57cfcb77d";
-  
-  $.ajax({
-    url: queryURL,
-    method: "GET"
-  }).then(function(response) {
-    var tBody = $("tbody");
-    var tRow = $("<tr>");
-    // Methods run on jQuery selectors return the selector they we run on
-    // This is why we can create and save a reference to a td in the same statement we update its text
-    var cityTd = $("<td>").text(response.Title);
-    var stateTd = $("<td>").text(response.Year);
-    // Append the newly created table data to the table row
-    tRow.append(cityTd, stateTd);
-    // Append the table row to the table body
-    tBody.append(tRow);
-  });
+// This is our API key
+$("#find-weather").on("click", function(event) {
+  event.preventDefault();
+  var weather = $("#weatherInput").val();
+  console.log(weather);
+  var APIKey = "&appid=166a433c57516f51dfab1f7edaed8413";
 
-  
-  // This is our API key
-  var APIKey = "8217efea7fd75166b3974bc57cfcb77d";
 
-  // Here we are building the URL we need to query the database
-  var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
-    "q={city name},{state}&appid=" + APIKey;
+// Here we are building the URL we need to query the database
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" +
+weather + APIKey;
 
-  // Here we run our AJAX call to the OpenWeatherMap API
-  $.ajax({
-    url: queryURL,
-    method: "GET"
-  })
+// Here we run our AJAX call to the OpenWeatherMap API
+$.ajax({
+  url: queryURL,
+  method: "GET"
+})
+  // We store all of the retrieved data inside of an object called "response"
+  .then(function(response) {
+
+    // Log the queryURL
+    console.log(queryURL);
+
+    // Log the resulting object
+    console.log(response);
+
+    // Transfer content to HTML
+    $(".city").html("<h1>" + response.name + " Weather Details</h1>");
+    $(".wind").text("Wind Speed: " + response.wind.speed);
+    $(".humidity").text("Humidity: " + response.main.humidity);
     
-    // We store all of the retrieved data inside of an object called "response"
-    .then(function(response) {
+    // Convert the temp to fahrenheit
+    var tempF = (response.main.temp - 273.15) * 1.80 + 32;
 
-      // Log the queryURL
-      console.log(queryURL);
+    // add temp content to html
+    $(".temp").text("Temperature (K) " + response.main.temp);
+    $(".tempF").text("Temperature (F) " + tempF.toFixed(2));
 
-      // Log the resulting object
-      console.log(response);
+    // Log the data in the console as well
+    console.log("Wind Speed: " + response.wind.speed);
+    console.log("Humidity: " + response.main.humidity);
+    console.log("Temperature (F): " + tempF);
 
-      // Transfer content to HTML
-      $(".city").html("<h1>" + response.name + " Weather Details</h1>");
-      $(".wind").text("Wind Speed: " + response.wind.speed);
-      $(".humidity").text("Humidity: " + response.main.humidity);
-      
-      // Convert the temp to fahrenheit
-      var tempF = (response.main.temp - 273.15) * 1.80 + 32;
+    
 
-      // add temp content to html
-      $(".temp").text("Temperature (K) " + response.main.temp);
-      $(".tempF").text("Temperature (F) " + tempF.toFixed(2));
-
-      // Log the data in the console as well
-      console.log("Wind Speed: " + response.wind.speed);
-      console.log("Humidity: " + response.main.humidity);
-      console.log("Temperature (F): " + tempF);
-    });
+  });
 });
+
+
+
+
+
+
