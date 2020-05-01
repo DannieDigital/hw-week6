@@ -15,6 +15,10 @@ h2 {
     padding: 30px;
     text-align: center;
     background: black;
+    background-image: url("images/weather.png");
+    background-repeat: round;
+    background-size: contain;
+    
     color: white;
     font-size: 30px;
   }
@@ -32,7 +36,8 @@ h2 {
 }
 
 .currentWeather {
-    background-color: #fff;
+    background-color: #43acf1;
+    color: white;
     border: 1px solid #eceff1;
     border-radius: 8px;
     box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
@@ -66,10 +71,7 @@ h2 {
     float: left;
 }
 
-button {
-    color: white;
-    background-color: blue;
-}
+
 
 .container {
   padding-bottom: 100%;
@@ -80,7 +82,7 @@ td {
 }
 
 #fiveDay {
-    background-color: blue;
+    background-color: #43acf1;
     border: 1px solid #eceff1;
     border-radius: 8px;
     box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
@@ -94,7 +96,7 @@ td {
 }
 
 #fiveDayOne {
-    background-color: blue;
+    background-color: #43acf1;
     border: 1px solid #eceff1;
     border-radius: 8px;
     box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
@@ -108,7 +110,7 @@ td {
 }
 
 #fiveDayTwo {
-    background-color: blue;
+    background-color: #43acf1;
     border: 1px solid #eceff1;
     border-radius: 8px;
     box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
@@ -122,7 +124,7 @@ td {
 }
 
 #fiveDayThree {
-    background-color: blue;
+    background-color: #43acf1;
     border: 1px solid #eceff1;
     border-radius: 8px;
     box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
@@ -136,7 +138,7 @@ td {
 }
 
 #fiveDayFour {
-    background-color: blue;
+    background-color: #43acf1;
     border: 1px solid #eceff1;
     border-radius: 8px;
     box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,

@@ -73,7 +73,7 @@ $.ajax({
 
     // Transfer content to HTML
     $(".forecastCity").html("<h2>" + five.city.name + ", " + "  " + five.city.country + " Five Day Forecast</h2>");
-    $(".forecastDay").text("Time: " + five.list[0].dt_txt);
+    $(".forecastDay").text("Date & Time: " + five.list[0].dt_txt);
     $(".forecastWind").text("Wind Speed: " + five.list[0].wind.speed);
     $(".forecastHumidity").text("Humidity: " + five.list[0].main.humidity);
 
@@ -87,7 +87,7 @@ $.ajax({
 
        // Day Two  Transfer content to HTML
     $(".fiveDayOneCity").html("<h2>" + five.city.name + ", " + "  " + five.city.country + " Five Day Forecast</h2>");
-    $(".fiveDayOnetDay").text("Time: " + five.list[8].dt_txt);
+    $(".fiveDayOnetDay").text("Date & Time: " + five.list[8].dt_txt);
     $(".fiveDayOneWind").text("Wind Speed: " + five.list[8].wind.speed);
     $(".fiveDayOneHumidity").text("Humidity: " + five.list[8].main.humidity);
 
@@ -100,7 +100,7 @@ $.ajax({
 
       // Day Three  Transfer content to HTML
     $(".fiveDayTwoCity").html("<h2>" + five.city.name + ", " + "  " + five.city.country +  " Five Day Forecast</h2>");
-    $(".fiveDayTwoDay").text("Time: " + five.list[16].dt_txt);
+    $(".fiveDayTwoDay").text("Date & Time: " + five.list[16].dt_txt);
     $(".fiveDayTwoWind").text("Wind Speed: " + five.list[16].wind.speed);
     $(".fiveDayTwoHumidity").text("Humidity: " + five.list[16].main.humidity);
 
@@ -114,7 +114,7 @@ $.ajax({
 
      // Day Four  Transfer content to HTML
     $(".fiveDayThreeCity").html("<h2>" + five.city.name + ", " + "  " + five.city.country +  " Five Day Forecast</h2>");
-    $(".fiveDayThreeDay").text("Time: " + five.list[24].dt_txt);
+    $(".fiveDayThreeDay").text("Date & Time: " + five.list[24].dt_txt);
     $(".fiveDayThreeWind").text("Wind Speed: " + five.list[24].wind.speed);
     $(".fiveDayThreeHumidity").text("Humidity: " + five.list[24].main.humidity);
 
@@ -127,7 +127,7 @@ $.ajax({
 
       // Day Five Transfer content to HTML
     $(".fiveDayFourCity").html("<h2>" + five.city.name + ", " + "  " + five.city.country +  " Five Day Forecast</h2>");
-    $(".fiveDayFourDay").text("Time: " + five.list[32].dt_txt);
+    $(".fiveDayFourDay").text("Date & Time: " + five.list[32].dt_txt);
     $(".fiveDayFourWind").text("Wind Speed: " + five.list[32].wind.speed);
     $(".fiveDayFourHumidity").text("Humidity: " + five.list[32].main.humidity);
 
