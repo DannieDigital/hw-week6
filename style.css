@@ -26,6 +26,7 @@ h2 {
     width: 33%;
     height: 200px;
     padding: 20px;
+    padding-bottom: 20%;
     margin-left: 30px;
    border: 1px solid #eee;  
 }
@@ -70,6 +71,13 @@ button {
     background-color: blue;
 }
 
+.container {
+  padding-bottom: 100%;
+}
+td {
+  
+  padding-bottom: 100%;
+}
 
 #fiveDay {
     background-color: blue;
@@ -81,7 +89,7 @@ button {
     margin-top: 80px;
     padding: 20px;
     width: 20%;
-    float: right;
+    float: left;
     color: whitesmoke;
 }
 
@@ -109,7 +117,7 @@ button {
     margin-top: 80px;
     padding: 20px;
     width: 20%;
-    float: right;
+    float: left;
     color: whitesmoke;
 }
 
@@ -123,7 +131,7 @@ button {
     margin-top: 80px;
     padding: 20px;
     width: 20%;
-    float: right;
+    float: left;
     color: whitesmoke;
 }
 
