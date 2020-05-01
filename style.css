@@ -71,7 +71,9 @@ h2 {
     float: left;
 }
 
-
+button.link { background:none;
+              border:none; 
+            }
 
 .container {
   padding-bottom: 100%;
